@@ -1,0 +1,33 @@
+.main-div {
+    /*height:200px;*/
+    width: 300px;
+    margin: auto;
+    border: 2px solid black;
+    padding: 10px;
+    /*border-spacing: 2px;*/
+}
+
+.row {
+    margin: 0px;
+}
+
+.display {
+    height: 30px;
+    width: 100%;
+}
+
+.back {
+    background-color: rgba(26, 99, 114, 0.136);
+}
+
+#clear {
+    width: 170px;
+}
+
+#delete {
+    width: 100px;
+}
+
+/*button{
+    margin:1px;
+}*/

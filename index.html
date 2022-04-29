@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="back">
+    <div class="container">
+        <h1>BOOTSTRAP CALCULATOR</h1><br><br>
+        <div class="main-div">
+            <div class="row ">
+                <input disabled type="text" id="result" class="display col-sm-12 bg-primary text-white">
+            </div><br>
+            <div>
+                <div class="row">
+                    <button type="button" class="col-sm-3" onclick="dis('1')">1</button>
+                    <button type="button" class="col-sm-3" onclick="dis('2')">2</button>
+                    <button type="button" class="col-sm-3" onclick="dis('3')">3</button>
+                    <button type="button" class="col-sm-3" onclick="dis('+')">+</button>
+                </div><br>
+                <div class="row">
+                    <button type="button" class="col-sm-3" onclick="dis('4')">4</button>
+                    <button type="button" class="col-sm-3" onclick="dis('5')">5</button>
+                    <button type="button" class="col-sm-3" onclick="dis('6')">6</button>
+                    <button type="button" class="col-sm-3" onclick="dis('-')">-</button>
+                </div><br>
+                <div class="row">
+                    <button type="button" class="col-sm-3" onclick="dis('7')">7</button>
+                    <button type="button" class="col-sm-3" onclick="dis('8')">8</button>
+                    <button type="button" class="col-sm-3" onclick="dis('9')">9</button>
+                    <button type="button" class="col-sm-3" onclick="dis('*')">*</button>
+                </div><br>
+                <div class="row">
+                    <button type="button" class="col-sm-3" onclick="dis('0')">0</button>
+                    <button type="button" class="col-sm-3" onclick="dis('.')">.</button>
+                    <button type="button" class="col-sm-3 btn-success" onclick="solve()">=</button>
+                    <button type="button" class="col-sm-3" onclick="dis('/')">/</button>
+                </div><br>
+                <div class="row">
+                    <button type="button" id="clear" class="btn btn-danger" onclick="clr()">Clear All </button>
+                    <button type="button" id="delete" class="btn btn-primary" onclick="cancel()">Del </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--we give the script tag here because the functions are declared above -->
+    <script src="fun.js"></script>
+</body>
+
+</html>
